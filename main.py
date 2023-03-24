@@ -62,4 +62,4 @@ for epoch in range(epochs_num):
         sgd([w, b], lr)
     with torch.no_grad():
         train_loss = torch.mean(loss(net(w, b, features), labels))
-        print(f'epoch {epoch + 1}, loss is {"%.8f"%train_loss}')
+        print(f'epoch {epoch + 1}, loss is {"%.8f" % train_loss}')
